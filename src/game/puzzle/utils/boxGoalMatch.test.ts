@@ -29,7 +29,8 @@ describe('isBoxOnMatchingGoal', () => {
   });
 
   it('does not count same cell with wrong pair as on goal', () => {
-    const entities = [box('b', 2, 3, 'a'), goal('g', 2, 3, 'b')];
-    expect(isBoxOnAnyMatchingGoal(entities[0], entities)).toBe(false);
+    const boxEntity = box('b', 2, 3, 'a');
+    const entities = [boxEntity, goal('g', 2, 3, 'b')];
+    expect(isBoxOnAnyMatchingGoal(boxEntity, entities)).toBe(false);
   });
 });
