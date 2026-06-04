@@ -40,6 +40,8 @@ npm run build:client
 /*         /index.html  200
 ```
 
+**Vercel** — use repo root `vercel.json` (client-only build). In the project dashboard, set environment variables from `.env.production` (`VITE_*` only). Do not use `npm run build`; that compiles the Express server, which Vercel does not run. Optional: add a rewrite/proxy for `/api` if the API is hosted elsewhere.
+
 ## 2. CDN deployment
 
 1. Upload `dist/assets/*` with long cache: `Cache-Control: public, max-age=31536000, immutable`
