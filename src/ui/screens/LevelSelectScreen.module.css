@@ -1,0 +1,72 @@
+.hint {
+  color: #a0a0b0;
+  font-family: system-ui, sans-serif;
+}
+
+.grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  width: 100%;
+  text-align: left;
+  padding: 16px;
+  background: #16213e;
+  border: 1px solid #2a3a5c;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #eaeaea;
+  font-family: system-ui, sans-serif;
+}
+
+.card:hover:not(:disabled) {
+  border-color: #4ecca3;
+  background: #1a2a4a;
+}
+
+.locked {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.order {
+  font-size: 12px;
+  color: #4ecca3;
+  font-weight: 700;
+}
+
+.name {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.meta {
+  font-size: 12px;
+  color: #8888a0;
+}
+
+.stars {
+  font-size: 16px;
+  color: #f5c842;
+  letter-spacing: 2px;
+}
+
+.done {
+  font-size: 12px;
+  color: #4ecca3;
+}
+
+.lockLabel {
+  font-size: 11px;
+  color: #e74c3c;
+  text-transform: uppercase;
+}

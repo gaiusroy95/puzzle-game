@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "metadata": {
+    "id": "level-02",
+    "name": "Single Crate",
+    "description": "One box, one goal — push the crate down to the green ring.",
+    "order": 2,
+    "stage": 1,
+    "difficulty": 2,
+    "unlockRequirement": "level-01",
+    "parMoves": 8,
+    "starThresholds": { "threeStarMoves": 8, "twoStarMoves": 12, "oneStarMoves": 16 },
+    "tags": ["intro"]
+  },
+  "definition": {
+    "puzzleType": "push-blocks",
+    "grid": { "width": 5, "height": 5, "cellSize": 64 },
+    "tiles": [
+      { "x": 0, "y": 0, "type": "wall" }, { "x": 1, "y": 0, "type": "wall" }, { "x": 2, "y": 0, "type": "wall" },
+      { "x": 3, "y": 0, "type": "wall" }, { "x": 4, "y": 0, "type": "wall" }, { "x": 0, "y": 1, "type": "wall" },
+      { "x": 4, "y": 1, "type": "wall" }, { "x": 0, "y": 2, "type": "wall" }, { "x": 4, "y": 2, "type": "wall" },
+      { "x": 0, "y": 3, "type": "wall" }, { "x": 4, "y": 3, "type": "wall" }, { "x": 0, "y": 4, "type": "wall" },
+      { "x": 1, "y": 4, "type": "wall" }, { "x": 2, "y": 4, "type": "wall" }, { "x": 3, "y": 4, "type": "wall" },
+      { "x": 4, "y": 4, "type": "wall" }
+    ],
+    "entities": [
+      { "id": "player", "kind": "player", "x": 1, "y": 2 },
+      { "id": "box-a", "kind": "box", "x": 2, "y": 2, "groupId": "a" },
+      { "id": "goal-a", "kind": "goal", "x": 3, "y": 3, "groupId": "a" }
+    ],
+    "rules": { "puzzleType": "push-blocks", "allowPush": true },
+    "winConditions": [{ "type": "all_boxes_on_goals" }],
+    "failConditions": [{ "type": "max_moves_exceeded" }],
+    "limits": { "maxMoves": 18 }
+  }
+}

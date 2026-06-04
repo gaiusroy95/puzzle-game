@@ -1,0 +1,69 @@
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.levelName {
+  font-family: system-ui, sans-serif;
+  font-size: 22px;
+  color: #ffffff;
+  margin: 0 0 12px;
+}
+
+.stars {
+  font-size: 48px;
+  color: #f5c842;
+  letter-spacing: 8px;
+  margin: 0 0 16px;
+}
+
+.stats {
+  font-family: system-ui, sans-serif;
+  font-size: 16px;
+  color: #a0a0b0;
+  margin: 0 0 32px;
+}
+
+.best {
+  color: #4ecca3;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.primary,
+.secondary {
+  font-family: system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 12px 22px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.primary {
+  background: #4ecca3;
+  color: #1a1a2e;
+}
+
+.primary:hover {
+  background: #3db892;
+}
+
+.secondary {
+  background: #16213e;
+  color: #eaeaea;
+  border: 1px solid #3a3a52;
+}
+
+.secondary:hover {
+  border-color: #4ecca3;
+}

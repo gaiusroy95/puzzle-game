@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "campaignId": "main",
+  "campaignName": "Main Campaign",
+  "levels": [
+    { "id": "level-01", "file": "level-01.json", "order": 1, "stage": 1 },
+    { "id": "level-02", "file": "level-02.json", "order": 2, "stage": 1 },
+    { "id": "level-03", "file": "level-03.json", "order": 3, "stage": 2 },
+    { "id": "level-04", "file": "level-04.json", "order": 4, "stage": 2 },
+    { "id": "level-05", "file": "level-05.json", "order": 5, "stage": 3 }
+  ]
+}
